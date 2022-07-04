@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/163ad75834.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+    <div class="container-fluid">
+       
+        <!-- first content -->
+        
+       <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Welcome back!</h2>
+                <p class="description description-primary">To keep conenected with us</p>
+                <p class="description description-primary">please login with your personal info</p>
+                <button id="signin" class="btn btn-light">sign in</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">create account</h2>
+                
+                <!-- social media -->
+                
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="description description-second">ou use seu email para se registrar:</p>
+                
+                <form id="formulario-cadastro" class="form_Cadastro">
+                    <label id="label-cadastro-name" class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input id="input-cadastro-name" class="info" type="text" class="form-control" aria-label="Nome" aria-describedby="addon-wrapping" placeholder="Name" required>
+                    </label>
+                    
+                    <label id="label-cadastro-email" class="label-input" for="">
+                        <i class="far fa-envelope  icon-modify"></i>
+                        <input id="input-cadastro-email" class="info" type="email" placeholder="Email" required>
+                    </label>
+                    
+                    <label id="label-cadastro-senha" class="label-input" for="">
+                        <i class="fas fa-lock  icon-modify"></i>
+                        <input id="input-cadastro-senha" class="info" type="password" placeholder="Password" required> 
+                    </label>
+                    
+                    <button type="submit" id="signUp" class="btn btn-second">sign up</button>
+                </form>
+            
+            </div>
+       </div>
+        
+        <!-- second content -->       
+       
+       <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Hello, Friend!</h2>
+                <p class="description description-primary">Enter yout personal details</p>
+                <p class="description description-primary">and start journey with us</p>
+                <button id="signup" class="btn btn-light">sign up</button>
+            </div>
+           
+                <!-- Login -->
+
+            <div class="second-column">
+                <h2 class="title title-second">sign in to developer</h2>
+                
+                <!-- social media -->
+                
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="">
+                            <li class="item-social-media">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <p class="description">or use your email account:</p>
+                <form id="formulario-login" class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope  icon-modify"></i>
+                        <input class="info" id="input-login-email" type="email" placeholder="Email" required>
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock  icon-modify"></i>
+                        <input class="info" id="input-login-senha" type="password" placeholder="Password" required> 
+                    </label>
+                   <div class="password mb-3 mt-3" >
+                        <a href="">Forgot your password?</a>
+                   </div> 
+                   <button type="submit" id="signIn" class="btn btn-second mt-3">sign in</button>
+                </form>
+            </div>
+       </div>
+   </div>
+</div>
+<script src="../src/script.js"></script>
+<script>
+    let btnSignin = document.querySelector("#signin");
+let btnSignup = document.querySelector("#signup");
+
+let body = document.querySelector("body");
+
+
+btnSignin.addEventListener("click", function(){
+    body.className = "sign-in-js"
+});
+
+btnSignup.addEventListener("click", function(){
+    body.className = "sign-up-js"
+});
+</script>
+</body>
+</html>
